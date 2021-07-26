@@ -1,1 +1,1 @@
-Repositório para codigos desenvolvidos durante o curso da Trybe.
+Repositório para armazenar os exercícios durante o curso da Trybe.
