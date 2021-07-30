@@ -26,7 +26,21 @@ console.log (area);
 console.log (perimeter);
 console.log ('--------------');
 
+// exercício 3
 
+const nota = 75;
+let mensagem;
 
+if (nota >= 80){
+    mensagem = 'Parabéns, você foi aprovado'
+}
+else if (nota < 80 && nota >= 60) {   
+    mensagem = 'Você está na nossa lista de espera'
+}
+else if (nota < 60){
+    mensagem = 'Você foi reprovado'
+}   
 
-// Crie uma constante chamada perimeter e atribua a ela a soma de todos os lados do retângulo.
+console.log ('exercício três:');
+console.log (mensagem);
+console.log ('---------------');
