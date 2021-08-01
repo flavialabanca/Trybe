@@ -186,3 +186,128 @@ if (confere){
 
 let peca;
 
+peca = 'Rei';
+
+switch (peca.toLowerCase()){
+    case 'rei':
+        console.log('rei - só pode andar uma casa em qualquer direção.');
+        break;
+    case 'bispo':
+        console.log('bispo - diagona.');
+        break;    
+    case 'rainha':
+        console.log('rainha - pode andar na horizontal, vertical e diagonal.');
+        break;
+    case 'cavalo':
+        console.log('cavalo - anda em L; pode pular sobre as peças.');
+        break;
+    case 'torre':  
+        console.log('torre - horizontal e vertical.');
+        break;
+    case 'peao':
+        console.log('peão - apenas uma casa para frente, no primeiro movimento podem ser duas.');
+        break;
+    default:
+        console.log('essa peça não existe!');
+        break;
+}
+
+//7
+
+let nota = 77;
+
+if (nota > 100 || nota < 0){
+    console.log('a nota deve estar entre 0 e 100')
+} else if (nota >= 90) {
+    console.log('conceito: A');
+} else if (nota >= 80){
+    console.log('conceito: B');
+} else if (nota >= 70){
+    console.log('conceito: C');
+} else if (nota >= 60){
+    console.log('conceito: D');
+} else if (nota >= 50){
+    console.log('conceito: E');
+} else {
+    console.log('conceito: F');
+}
+
+//8
+
+const numeroUm = 1;
+const numeroDois = 2;
+const numeroTres = 3;
+
+if (numeroUm % 2 === 0 || numeroDois % 2 === 0 || numeroTres% 2 === 0){
+    console.log('true');
+} else {
+    console.log('false');
+}
+
+//9
+
+const numeroUm = 4;
+const numeroDois = 2;
+const numeroTres = 6;
+
+if (numeroUm % 2 > 0 || numeroDois % 2 > 0 || numeroTres% 2 > 0){
+    console.log('true');
+} else {
+    console.log('false');
+}
+
+//10
+
+const valorProduto = 1;
+const valorVenda = 2;
+let valorTotal;
+// valor total: com imposto
+let valorFinal;
+// valor final: valor da venda
+
+if (valorProduto < 0 || valorVenda < 0){
+    console.log('erro!')
+} else {
+    valorTotal = valorProduto * 1.2;
+    valorFinal = (valorVenda - valorTotal) * 1000;
+    console.log('lucro em 1000 unidades: ' + valorFinal);
+}
+
+//11
+
+let salarioBruto = 3000;
+let salarioLiquido;
+let inss; 
+let ir
+
+if (salarioBruto <= 1556.94){
+    inss = (salarioBruto*8)/100
+} else if (salarioBruto <= 2594.92){
+    inss = (salarioBruto*9)/100
+} else if (salarioBruto <= 5189.82){
+    inss = (salarioBruto*11)/100
+} else {
+    inss = 570.88;
+}
+
+let salarioBase = salarioBruto - inss;
+
+if (salarioBase <= 1903.98){
+    ir = 0;
+} else if (salarioBase <= 2806.65) {
+    ir = (salarioBase*0.075) - 142.80;
+} else if (salarioBase <= 3751.05) {
+    ir = (salarioBase*0.015) - 354.80;
+} else if (salarioBase <= 4664.68) {
+    ir = (salarioBase*0.225) - 636.13;
+} else {
+    ir = (salarioBase*0.275) - 869.36;
+}
+
+salarioLiquido = salarioBase - ir;
+
+console.log('--- salário bruto:   ' + salarioBruto);
+console.log('inss:                ' + inss);
+console.log('salário base:        ' + salarioBase);
+console.log('imposto de renda:    ' + ir);
+console.log('--- salário líquido: ' + salarioLiquido);
