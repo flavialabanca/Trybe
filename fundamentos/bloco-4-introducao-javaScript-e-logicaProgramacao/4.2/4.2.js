@@ -37,3 +37,35 @@
 //menu.push('Contato');
 //console.log(menu.length);
 //console.log(menu);
+
+// exercícios - FOR:
+
+//let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+//for (var index = 0; index < groceryList.length; index +=1){
+//    console.log(groceryList[index]);
+//}
+
+// exercícios - FOR/OF:
+
+//let numeros = [1, 2, 3, 4, 5];
+//for (let numero of numeros){
+//    console.log(numero);
+//}
+
+//let palavra = 'princesa';
+//for (let letra of palavra) {
+//  console.log(letra);
+//}
+
+//let numeros = [10, 20, 30];
+//for (let soma of numeros) {
+//  soma += 1;
+//  console.log(soma);
+//}
+
+//let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+//for (let nome of names){
+//    console.log(nome);
+//}
+
+// Exercícios do Course: Vamos Praticar! 
