@@ -70,7 +70,7 @@
 
 // Exercícios do Course: Vamos Praticar! 
 
-//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //console.log('--- ex um');
 //for (let index = 0; index < numbers.length; index +=1){
 //        console.log(numbers[index]);
@@ -144,3 +144,36 @@
 //    resultadoDivisao = numeros[index] / 2;
 //    console.log('numero ' + numeros[index] + ' divido por 2 = ' + resultadoDivisao);
 //}
+
+//let posicao;
+//for (let index = 1; index < numbers.length; index += 1){
+//    for (let indexDois = 0; indexDois < index; indexDois +=1){
+//        if (numbers[index] < numbers[indexDois]){
+//            posicao = numbers[index];
+//            numbers[index] = numbers[indexDois];
+//            numbers[indexDois] = posicao;
+//        }
+//    }
+//}
+//console.log(numbers)
+
+//for (let index = 1; index < numbers.length; index += 1){
+//    for (let indexDois = 0; indexDois < index; indexDois +=1){
+//        if (numbers[index] > numbers[indexDois]){
+//            posicao = numbers[index];
+//            numbers[index] = numbers[indexDois];
+//            numbers[indexDois] = posicao;
+//        }
+//    }
+//}
+//console.log(numbers)
+
+let multiplos = [];
+for (let index = 0; index < numbers.length; index +=1){
+    if (index + 1 < numbers.lengt){
+        multiplos.push(numbers[index] * numbers[index + 1]);
+    } else {
+        multiplos.push(numbers[index] * 2);
+    }
+}
+console.log(multiplos);
