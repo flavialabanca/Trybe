@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+        // exercício 1
+        function mudaParagrafo() {
+            let paragrafo = document.getElementsByTagName('p')[1]
+            paragrafo.innerText = "em new york. comendo no five guys e comprando iPhone novo.";
+        }
+        mudaParagrafo();
+
+        // exercício 2 
+        function mudaCor() {
+            let quadrado = document.getElementsByClassName('main-content')[0];
+            quadrado.style.background = "rgb(76,164,109)";
+        }
+        mudaCor();
+
+        // exercício 3
+        function mudaVermelhoParaBranco(){
+            let quadrado = document.getElementsByClassName("center-content")[0];
+            quadrado.style.background = "white";
+        }
+        mudaVermelhoParaBranco();
+
+        // exercicio 4
+        function acertaTexto() {
+            let texto = document.getElementsByTagName('h1')[0];
+            texto.innerText = "Exercício 5.1 - JavaScript";
+        }
+        acertaTexto();
+
+        // exercício 5
+        function maiusculo() {
+            let paragrafo = document.getElementsByTagName('p')[0];
+            paragrafo.innerText = paragrafo.innerText.toUpperCase();
+        }
+        maiusculo();
+
+        // exercício 6
+        function mostraTudo() {
+            let paragrafo = document.getElementsByTagName("p");
+            for (let index = 0; index < paragrafo.length; index += 1) {
+                console.log(paragrafo[index].innerHTML);
+            }
+        }
+        mostraTudo();
+
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+        */
+    </script>
+  </body>
+</html>
